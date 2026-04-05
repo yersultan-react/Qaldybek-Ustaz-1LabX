@@ -1,0 +1,167 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,16244,e=>{"use strict";var a=e.i(29428),r=e.i(18857);let l={kk:{brandTitle:"Виртуалды зертхана",brandSubtitle:"Гармоникалық тербелістердің теңдеулері мен графиктері",heroTitle:"Гармоникалық тербелістерді интерактивті түрде зерттеу",heroText:"Амплитуда, период және бастапқы фазаны енгізіп, координата, жылдамдық және үдеу графиктерін бірден бақылаңыз.",pill1:"Интерактивті басқару",pill2:"x / v / a / E графиктері",pill3:"Қазақша / Орысша",formulaLabel:"Ағымдағы тербеліс теңдеуі",controlTitle:"Параметрлерді енгізу",controlSub:"Мәндерді қолмен теріңіз",funcLabel:"Функция",ampLabel:"Амплитуда A (м)",periodLabel:"Период T (с)",phaseLabel:"Бастапқы фаза φ (рад)",timeLabel:"Уақыт аралығы (с)",speedLabel:"Анимация жылд.",massLabel:"Масса m (кг)",applyBtn:"Қолдану",playStop:["Тоқтату","Жалғастыру"],resetBtn:"Қалпына келтіру",stat1Label:"Жиілік",stat2Label:"Бұрыштық жиілік",stat3Label:"Макс. жылдамдық",stat4Label:"Макс. үдеу",animTitle:"Қозғалыс анимациясы",animSub:"Нүктенің тербелісін нақты уақытта бақылау",graphX:"x(t) — Координата",graphV:"v(t) — Жылдамдық",graphA:"a(t) — Үдеу",graphE:"E(t) — Кинетикалық және Потенциалдық Энергия",graphEsub:"Ek — кинетикалық (жасыл), Ep — потенциалдық (қызғылт), E — толық (ақ)",theoryTitle:"Қысқаша теория",tasksTitle:"Зертханалық тапсырмалар",theoryList:["Координата: x(t) = A·sin(ωt + φ)","Жылдамдық: v(t) = Aω·cos(ωt + φ)","Үдеу: a(t) = −Aω²·sin(ωt + φ)","Жиілік: f = 1/T,  бұрыштық жиілік: ω = 2π/T","Максимал жылдамдық: vmax = Aω,  үдеу: amax = Aω²","Кинетикалық энергия: Ek = ½mv²","Потенциалдық энергия: Ep = ½mω²x²","Толық энергия: E = Ek + Ep = ½mω²A² = const"],tasks:["1) A=3 м, T=2 с енгізіп, vmax мен amax мәндерін тап.","2) Периодты азайтқанда бұрыштық жиілік қалай өзгереді?","3) φ=1.57 енгізіп, cos пен sin графиктерінің айырмашылығын түсіндір.","4) Энергия графигінде Ek максимум болғанда Ep нөлге тең екенін байқа."],footerText:"Виртуалды зертхана — физика сабағына арналған интерактивті құрал.",unitSec:"с",live:"t = {t} с   x = {x} м   v = {v} м/с",axisT:"t, с",axisX:"x, м",axisV:"v, м/с",axisAcc:"a, м/с²",axisE:"E, Дж",eqX:"x(t) =",eqV:"v(t) =",eqA:"a(t) =",displayMode:"Көрсету режимі",modeAll:"Барлығы",modeX:"x(t)",modeV:"v(t)",modeA:"a(t)",modeE:"E(t)",validErr:"Қате мән! A > 0, T > 0 болуы керек.",authorLabel:"Автор"},ru:{brandTitle:"Виртуальная лаборатория",brandSubtitle:"Уравнения и графики гармонических колебаний",heroTitle:"Интерактивное исследование гармонических колебаний",heroText:"Введите амплитуду, период и начальную фазу — наблюдайте графики координаты, скорости и ускорения в реальном времени.",pill1:"Ручной ввод",pill2:"x / v / a / E графики",pill3:"Казахский / Русский",formulaLabel:"Текущее уравнение колебания",controlTitle:"Ввод параметров",controlSub:"Введите значения вручную",funcLabel:"Функция",ampLabel:"Амплитуда A (м)",periodLabel:"Период T (с)",phaseLabel:"Начальная фаза φ (рад)",timeLabel:"Интервал времени (с)",speedLabel:"Скорость анимации",massLabel:"Масса m (кг)",applyBtn:"Применить",playStop:["Пауза","Продолжить"],resetBtn:"Сбросить",stat1Label:"Частота",stat2Label:"Цикл. частота",stat3Label:"Макс. скорость",stat4Label:"Макс. ускорение",animTitle:"Анимация движения",animSub:"Наблюдение за колебанием точки в реальном времени",graphX:"x(t) — Координата",graphV:"v(t) — Скорость",graphA:"a(t) — Ускорение",graphE:"E(t) — Кинетическая и Потенциальная Энергия",graphEsub:"Ek — кинетическая (зелёный), Ep — потенциальная (розовый), E — полная (белый)",theoryTitle:"Краткая теория",tasksTitle:"Лабораторные задания",theoryList:["Координата: x(t) = A·sin(ωt + φ)","Скорость: v(t) = Aω·cos(ωt + φ)","Ускорение: a(t) = −Aω²·sin(ωt + φ)","Частота: f = 1/T,  циклическая частота: ω = 2π/T","Макс. скорость: vmax = Aω,  ускорение: amax = Aω²","Кинетическая энергия: Ek = ½mv²","Потенциальная энергия: Ep = ½mω²x²","Полная энергия: E = Ek + Ep = ½mω²A² = const"],tasks:["1) Введите A=3 м, T=2 с и найдите vmax и amax.","2) Как меняется циклическая частота при уменьшении периода?","3) Введите φ=1.57 и объясните разницу между графиками sin и cos.","4) На графике энергий заметь: когда Ek максимальна, Ep равна нулю."],footerText:"Виртуальная лаборатория — интерактивный инструмент для урока физики.",unitSec:"с",live:"t = {t} с   x = {x} м   v = {v} м/с",axisT:"t, с",axisX:"x, м",axisV:"v, м/с",axisAcc:"a, м/с²",axisE:"E, Дж",eqX:"x(t) =",eqV:"v(t) =",eqA:"a(t) =",displayMode:"Режим отображения",modeAll:"Все",modeX:"x(t)",modeV:"v(t)",modeA:"a(t)",modeE:"E(t)",validErr:"Ошибка! A > 0, T > 0 обязательны.",authorLabel:"Автор"}},t=e=>Number(e).toFixed(2);function s(e,a,r,l,t){return"sin"===t?a*Math.sin(r*e+l):a*Math.cos(r*e+l)}function i(e,a,r,l,t){return"sin"===t?a*r*Math.cos(r*e+l):-a*r*Math.sin(r*e+l)}function o(e,a,r,l,s,i,o){let n=e.getContext("2d");if(!n)return;let d=e.width,c=e.height;n.clearRect(0,0,d,c);let p=n.createLinearGradient(0,0,0,c);p.addColorStop(0,"#050d1c"),p.addColorStop(1,"#080f20"),n.fillStyle=p,n.fillRect(0,0,d,c);let x=c/2,b=Math.max(Math.abs(r),.001),m=(d-112)/l,f=(c/2-32)/b;n.fillStyle="rgba(0,229,255,0.07)";for(let e=0;e<=14;e++)for(let a=0;a<=8;a++){let r=56+e/14*(d-112),l=16+a/8*(c-32);n.beginPath(),n.arc(r,l,1.5,0,2*Math.PI),n.fill()}n.strokeStyle="rgba(0,229,255,0.06)",n.lineWidth=1;for(let e=0;e<=10;e++){let a=56+e/10*(d-112);n.beginPath(),n.moveTo(a,16),n.lineTo(a,c-16),n.stroke()}for(let e=0;e<=6;e++){let a=16+e/6*(c-32);n.beginPath(),n.moveTo(56,a),n.lineTo(d-56,a),n.stroke()}n.strokeStyle="rgba(0,229,255,0.25)",n.lineWidth=1.5,n.beginPath(),n.moveTo(56,x),n.lineTo(d-56,x),n.stroke(),n.beginPath(),n.moveTo(56,14),n.lineTo(56,c-14),n.stroke(),n.fillStyle="rgba(0,229,255,0.5)",n.font="12px 'Courier New', monospace",n.fillText(i,5,20),n.fillText(o,d-44,x-8),n.fillStyle="rgba(0,229,255,0.35)",n.font="10px 'Courier New', monospace";for(let e=0;e<=8;e++){let a=56+e/8*(d-112);n.fillText(t(e*l/8),a-10,x+16)}for(let e=-2;e<=2;e++){if(0===e)continue;let a=e*b/2,r=x-a*f;n.fillText(t(a),3,r+4)}n.save(),n.shadowColor=s,n.shadowBlur=16,n.strokeStyle=s,n.lineWidth=2.5,n.beginPath();for(let e=0;e<=d-112;e++){let r=x-a(e/m)*f;0===e?n.moveTo(56+e,r):n.lineTo(56+e,r)}n.stroke(),n.restore(),n.strokeStyle="rgba(255,255,255,0.65)",n.lineWidth=1,n.beginPath();for(let e=0;e<=d-112;e++){let r=x-a(e/m)*f;0===e?n.moveTo(56+e,r):n.lineTo(56+e,r)}n.stroke()}e.s(["default",0,function(){let[e,n]=(0,r.useState)("kk"),[d,c]=(0,r.useState)(!0),[p,x]=(0,r.useState)("2"),[b,m]=(0,r.useState)("4"),[f,h]=(0,r.useState)("0"),[g,u]=(0,r.useState)("12"),[v,j]=(0,r.useState)("1"),[k,y]=(0,r.useState)("1"),[N,w]=(0,r.useState)("sin"),[T,S]=(0,r.useState)("all"),[C,E]=(0,r.useState)(""),[L,A]=(0,r.useState)(2),[P,z]=(0,r.useState)(4),[M,$]=(0,r.useState)(0),[B,R]=(0,r.useState)(12),[q,X]=(0,r.useState)(1),[I,V]=(0,r.useState)(1),[F,O]=(0,r.useState)(""),W=(0,r.useRef)(null),G=(0,r.useRef)(null),U=(0,r.useRef)(null),K=(0,r.useRef)(null),D=(0,r.useRef)(null),H=(0,r.useRef)(null),Q=(0,r.useRef)(null),Y=2*Math.PI/P,J=1/P,Z=L*Y,_=L*Y*Y,ee=.5*I*Y*Y*L*L,ea=l[e],er="sin"===N?`${t(L)}\xb7sin(${t(Y)}t + ${t(M)})`:`${t(L)}\xb7cos(${t(Y)}t + ${t(M)})`,el="sin"===N?`${t(Z)}\xb7cos(${t(Y)}t + ${t(M)})`:`-${t(Z)}\xb7sin(${t(Y)}t + ${t(M)})`,et="sin"===N?`-${t(_)}\xb7sin(${t(Y)}t + ${t(M)})`:`-${t(_)}\xb7cos(${t(Y)}t + ${t(M)})`,es=(0,r.useCallback)(()=>{let e=parseFloat(p),a=parseFloat(b),r=parseFloat(f),l=parseFloat(g),t=parseFloat(v),s=parseFloat(k);isNaN(e)||e<=0||isNaN(a)||a<=0||isNaN(r)||isNaN(l)||l<1||isNaN(t)||t<=0||isNaN(s)||s<=0?E(ea.validErr):(E(""),A(e),z(a),$(r),R(l),X(t),V(s),Q.current=null)},[p,b,f,g,v,k,ea.validErr]),ei=(0,r.useCallback)(()=>{let e=2*Math.PI/P,a=L*e,r=L*e*e;G.current&&o(G.current,a=>s(a,L,e,M,N),L,B,"#00e5ff",ea.axisX,ea.axisT),U.current&&o(U.current,a=>i(a,L,e,M,N),a,B,"#00ff8c",ea.axisV,ea.axisT),K.current&&o(K.current,a=>"sin"===N?-L*e*e*Math.sin(e*a+M):-L*e*e*Math.cos(e*a+M),r,B,"#ff6b35",ea.axisAcc,ea.axisT),D.current&&function(e,a,r,l,o,n,d,c,p){let x=e.getContext("2d");if(!x)return;let b=e.width,m=e.height;x.clearRect(0,0,b,m);let f=x.createLinearGradient(0,0,0,m);f.addColorStop(0,"#050d1c"),f.addColorStop(1,"#080f20"),x.fillStyle=f,x.fillRect(0,0,b,m);let h=.5*n*r*r*a*a;if(h<1e-9)return;let g=(b-128)/d,u=m-48,v=u/h;x.fillStyle="rgba(0,229,255,0.05)";for(let e=0;e<=14;e++)for(let a=0;a<=6;a++)x.beginPath(),x.arc(64+e/14*(b-128),18+a/6*u,1.4,0,2*Math.PI),x.fill();x.strokeStyle="rgba(0,229,255,0.055)",x.lineWidth=1;for(let e=0;e<=10;e++){let a=64+e/10*(b-128);x.beginPath(),x.moveTo(a,18),x.lineTo(a,18+u),x.stroke()}for(let e=0;e<=4;e++){let a=18+e/4*u;x.beginPath(),x.moveTo(64,a),x.lineTo(b-64,a),x.stroke()}let j=18+u;x.strokeStyle="rgba(0,229,255,0.3)",x.lineWidth=1.5,x.beginPath(),x.moveTo(64,18),x.lineTo(64,j),x.stroke(),x.beginPath(),x.moveTo(64,j),x.lineTo(b-64,j),x.stroke(),x.fillStyle="rgba(0,229,255,0.5)",x.font="12px 'Courier New', monospace",x.fillText(c,3,30),x.fillText(p,b-44,j-6),x.fillStyle="rgba(0,229,255,0.35)",x.font="10px 'Courier New', monospace";for(let e=0;e<=4;e++){let a=e/4*h,r=j-a*v;x.fillText(t(a),3,r+4)}for(let e=0;e<=8;e++){let a=64+e/8*(b-128);x.fillText(t(e*d/8),a-10,j+14)}let k=b-128,y=e=>{let t=i(e/g,a,r,l,o);return .5*n*t*t},N=e=>{let t=s(e/g,a,r,l,o);return .5*n*r*r*t*t};x.save(),x.beginPath(),x.moveTo(64,j);for(let e=0;e<=k;e++){let a=j-N(e)*v;x.lineTo(64+e,a)}x.lineTo(64+k,j),x.closePath();let w=x.createLinearGradient(0,18,0,j);w.addColorStop(0,"rgba(255,80,200,0.22)"),w.addColorStop(1,"rgba(255,80,200,0.03)"),x.fillStyle=w,x.fill(),x.restore(),x.save(),x.beginPath(),x.moveTo(64,j);for(let e=0;e<=k;e++){let a=j-y(e)*v;x.lineTo(64+e,a)}x.lineTo(64+k,j),x.closePath();let T=x.createLinearGradient(0,18,0,j);T.addColorStop(0,"rgba(0,255,140,0.18)"),T.addColorStop(1,"rgba(0,255,140,0.02)"),x.fillStyle=T,x.fill(),x.restore(),x.save(),x.shadowColor="#ff50c8",x.shadowBlur=14,x.strokeStyle="#ff50c8",x.lineWidth=2.2,x.beginPath();for(let e=0;e<=k;e++){let a=j-N(e)*v;0===e?x.moveTo(64+e,a):x.lineTo(64+e,a)}x.stroke(),x.restore(),x.save(),x.shadowColor="#00ff8c",x.shadowBlur=14,x.strokeStyle="#00ff8c",x.lineWidth=2.2,x.beginPath();for(let e=0;e<=k;e++){let a=j-y(e)*v;0===e?x.moveTo(64+e,a):x.lineTo(64+e,a)}x.stroke(),x.restore(),x.save(),x.setLineDash([7,5]),x.strokeStyle="rgba(255,255,255,0.5)",x.lineWidth=1.5,x.shadowColor="#ffffff",x.shadowBlur=8;let S=j-h*v;x.beginPath(),x.moveTo(64,S),x.lineTo(b-64,S),x.stroke(),x.restore(),x.fillStyle="rgba(255,255,255,0.55)",x.font="10px 'Courier New', monospace",x.fillText(`E=${t(h)} Дж`,b-64-80,S-5);x.font="10px 'Courier New', monospace",x.fillStyle="#00ff8c",x.fillText("■ Ek",74,32),x.fillStyle="#ff50c8",x.fillText("■ Ep",122,32),x.fillStyle="rgba(255,255,255,0.55)",x.fillText("--- E",170,32)}(D.current,L,e,M,N,I,B,ea.axisE,ea.axisT)},[L,P,M,N,B,I,ea.axisX,ea.axisV,ea.axisAcc,ea.axisE,ea.axisT]);(0,r.useEffect)(()=>{ei()},[T,ei]);let eo=(0,r.useCallback)(e=>{null===Q.current&&(Q.current=e);let a=W.current;if(!a)return;let r=a.getContext("2d");if(!r)return;let l=2*Math.PI/P,o=(e-Q.current)/1e3*q,n=s(o,L,l,M,N),c=i(o,L,l,M,N),p=a.width,x=a.height,b=x/2,m=p/2,f=Math.min(80,(p-160)/(2*Math.max(L,1)));r.clearRect(0,0,p,x);let h=r.createLinearGradient(0,0,0,x);h.addColorStop(0,"#050d1c"),h.addColorStop(1,"#080f20"),r.fillStyle=h,r.fillRect(0,0,p,x),r.fillStyle="rgba(0,229,255,0.05)";for(let e=0;e<=24;e++)for(let a=0;a<=4;a++)r.beginPath(),r.arc(e/24*p,a/4*x,1.2,0,2*Math.PI),r.fill();r.save(),r.shadowColor="#00e5ff",r.shadowBlur=24,r.strokeStyle="rgba(0,229,255,0.35)",r.lineWidth=1.5,r.beginPath(),r.moveTo(60,b),r.lineTo(p-60,b),r.stroke(),r.restore(),r.strokeStyle="rgba(0,229,255,0.25)",r.lineWidth=1;for(let e=-6;e<=6;e++){let a=m+e*f;r.beginPath(),r.moveTo(a,b-7),r.lineTo(a,b+7),r.stroke()}r.strokeStyle="rgba(0,229,255,0.15)",r.beginPath(),r.moveTo(m,b-36),r.lineTo(m,b+36),r.stroke();let g=c/(L*l+.001)*44;r.save(),r.strokeStyle="#00ff8c",r.lineWidth=2,r.shadowColor="#00ff8c",r.shadowBlur=10;let u=m+n*f;r.beginPath(),r.moveTo(u,b-30),r.lineTo(u+g,b-30),r.stroke();let v=g>0?1:-1;r.beginPath(),r.moveTo(u+g,b-30),r.lineTo(u+g-7*v,b-35),r.lineTo(u+g-7*v,b-25),r.fillStyle="#00ff8c",r.fill(),r.restore();let j=.5*I*c*c,k=.5*I*l*l*n*n,y=.5*I*l*l*L*L,w=p-48,T=b-25;r.save(),r.fillStyle="rgba(0,255,140,0.15)",r.fillRect(w,T,10,50),r.fillStyle="#00ff8c",r.shadowColor="#00ff8c",r.shadowBlur=8;let S=y>0?j/y*50:0;r.fillRect(w,T+50-S,10,S),r.fillStyle="rgba(0,255,140,0.6)",r.font="8px 'Courier New'",r.fillText("Ek",w,T+50+12),r.fillStyle="rgba(255,80,200,0.15)",r.fillRect(w+14,T,10,50),r.fillStyle="#ff50c8",r.shadowColor="#ff50c8";let C=y>0?k/y*50:0;r.fillRect(w+14,T+50-C,10,C),r.fillStyle="rgba(255,80,200,0.6)",r.fillText("Ep",w+14,T+50+12),r.restore(),r.save(),r.shadowColor="#00e5ff",r.shadowBlur=36;let E=r.createRadialGradient(u,b,3,u,b,20);E.addColorStop(0,"#ffffff"),E.addColorStop(.35,"#00e5ff"),E.addColorStop(1,"rgba(0,80,180,0.2)"),r.fillStyle=E,r.beginPath(),r.arc(u,b,19,0,2*Math.PI),r.fill(),r.restore(),O(ea.live.replace("{t}",t(o)).replace("{x}",t(n)).replace("{v}",t(c))),d&&(H.current=requestAnimationFrame(eo))},[L,P,M,N,q,I,d,ea.live]);return(0,r.useEffect)(()=>(ei(),Q.current=null,H.current&&cancelAnimationFrame(H.current),H.current=requestAnimationFrame(eo),()=>{H.current&&cancelAnimationFrame(H.current)}),[ei,eo]),(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)("style",{children:`
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+        :root {
+          --bg:#040b18; --surface:rgba(6,16,40,0.88); --surface2:rgba(3,10,28,0.92);
+          --text:#c8deff; --muted:#3d5a84;
+          --cyan:#00e5ff; --green:#00ff8c; --orange:#ff6b35; --pink:#ff50c8;
+          --border:rgba(0,229,255,0.1); --bh:rgba(0,229,255,0.32);
+          --glow:0 0 30px rgba(0,229,255,0.1); --shadow:0 24px 70px rgba(0,0,0,0.7);
+        }
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html,body{height:100%}
+        body{font-family:'IBM Plex Mono','Courier New',monospace;background:var(--bg);color:var(--text);overflow-x:hidden}
+        .bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;
+          background-image:linear-gradient(rgba(0,229,255,0.025) 1px,transparent 1px),
+          linear-gradient(90deg,rgba(0,229,255,0.025) 1px,transparent 1px);
+          background-size:52px 52px}
+        .bg-glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+          background:radial-gradient(ellipse 70% 55% at 15% 8%,rgba(0,40,120,0.3) 0%,transparent 65%),
+          radial-gradient(ellipse 55% 70% at 88% 92%,rgba(0,80,60,0.15) 0%,transparent 65%)}
+        .scan{position:fixed;left:0;right:0;height:3px;z-index:0;pointer-events:none;
+          background:linear-gradient(90deg,transparent,rgba(0,229,255,0.07),transparent);
+          animation:sc 9s linear infinite}
+        @keyframes sc{from{top:-3px}to{top:100vh}}
+        .page{position:relative;z-index:1;width:min(1440px,96%);margin:0 auto;padding:18px 0 40px}
+
+        /* AUTHOR BANNER */
+        .author-banner{
+          text-align:center;padding:9px 20px;margin-bottom:10px;
+          background:linear-gradient(90deg,rgba(0,229,255,0.04),rgba(0,255,140,0.07),rgba(255,80,200,0.04));
+          border:1px solid rgba(0,229,255,0.18);border-radius:12px;
+          display:flex;align-items:center;justify-content:center;gap:12px;
+          box-shadow:0 0 24px rgba(0,229,255,0.07);
+        }
+        .author-name{
+          font-family:'Orbitron',monospace;font-size:16px;font-weight:800;letter-spacing:.12em;
+          background:linear-gradient(90deg,var(--cyan),var(--green),var(--pink));
+          -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+        }
+        .author-label{font-size:10px;color:var(--muted);letter-spacing:.15em;text-transform:uppercase}
+        .author-divider{width:1px;height:28px;background:rgba(0,229,255,0.2)}
+
+        /* TOPBAR */
+        .topbar{display:flex;justify-content:space-between;align-items:center;
+          padding:13px 20px;border-radius:14px;margin-bottom:16px;
+          background:var(--surface);border:1px solid var(--border);
+          box-shadow:var(--glow),var(--shadow);position:sticky;top:10px;z-index:10;
+          backdrop-filter:blur(24px)}
+        .brand{display:flex;align-items:center;gap:13px}
+        .logo{width:44px;height:44px;border-radius:11px;
+          background:linear-gradient(135deg,var(--cyan),var(--green));
+          display:grid;place-items:center;font-family:'Orbitron',monospace;
+          font-weight:800;font-size:17px;color:#040b18;
+          box-shadow:0 0 22px rgba(0,229,255,0.45)}
+        .brand h1{font-family:'Orbitron',monospace;font-size:14px;font-weight:600;
+          color:var(--cyan);letter-spacing:.06em}
+        .brand small{font-size:10px;color:var(--muted);display:block;margin-top:2px}
+        .top-actions{display:flex;gap:8px}
+
+        .btn{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
+          padding:8px 14px;border-radius:9px;cursor:pointer;transition:all .18s;
+          border:1px solid var(--border);background:var(--surface2);color:var(--text);
+          letter-spacing:.06em;text-transform:uppercase}
+        .btn:hover{border-color:var(--bh);box-shadow:var(--glow);transform:translateY(-1px)}
+        .btn-cyan{background:linear-gradient(135deg,rgba(0,229,255,0.18),rgba(0,180,220,0.08));
+          border-color:rgba(0,229,255,0.38);color:var(--cyan);box-shadow:0 0 14px rgba(0,229,255,0.08)}
+        .btn-cyan:hover{box-shadow:0 0 28px rgba(0,229,255,0.28)}
+        .lang-btn.active{background:rgba(0,229,255,0.12);border-color:rgba(0,229,255,0.45);
+          color:var(--cyan);box-shadow:0 0 12px rgba(0,229,255,0.18)}
+
+        .hero{display:grid;grid-template-columns:1.35fr .65fr;gap:16px;
+          padding:26px;border-radius:18px;margin-bottom:16px;
+          background:var(--surface);border:1px solid var(--border);
+          box-shadow:var(--glow),var(--shadow);backdrop-filter:blur(24px)}
+        .hero h2{font-family:'Orbitron',monospace;font-size:24px;font-weight:800;
+          line-height:1.2;margin-bottom:10px;
+          background:linear-gradient(135deg,var(--cyan),var(--green));
+          -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .hero p{color:var(--muted);font-size:12px;line-height:1.9;margin-bottom:12px}
+        .pills{display:flex;gap:7px;flex-wrap:wrap}
+        .pill{padding:5px 12px;border-radius:999px;font-size:10px;
+          border:1px solid var(--border);color:rgba(200,222,255,0.5);background:rgba(0,229,255,0.03)}
+        .formula-box{padding:18px;border-radius:14px;
+          background:linear-gradient(135deg,rgba(0,229,255,0.06),rgba(0,255,140,0.03));
+          border:1px solid rgba(0,229,255,0.18);display:flex;flex-direction:column;gap:10px}
+        .fl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-bottom:2px}
+        .fr{display:flex;align-items:baseline;gap:8px}
+        .fk{font-size:10px;color:var(--muted);min-width:50px}
+        .fv{font-size:14px;font-weight:500;letter-spacing:.02em}
+        .fv.cx{color:var(--cyan)}.fv.gn{color:var(--green)}.fv.or{color:var(--orange)}
+
+        .main-grid{display:grid;grid-template-columns:310px 1fr;gap:16px;margin-bottom:16px}
+        .panel{background:var(--surface);border:1px solid var(--border);
+          border-radius:18px;padding:20px;box-shadow:var(--glow),var(--shadow);
+          backdrop-filter:blur(24px);display:flex;flex-direction:column}
+        .panel-title{font-family:'Orbitron',monospace;font-size:12px;font-weight:600;
+          color:var(--cyan);letter-spacing:.08em;margin-bottom:3px}
+        .panel-sub{font-size:10px;color:var(--muted);margin-bottom:16px}
+        .field{margin-bottom:12px}
+        .field-label{font-size:10px;color:var(--muted);text-transform:uppercase;
+          letter-spacing:.09em;margin-bottom:5px;display:block}
+        .field-input{width:100%;padding:10px 13px;border-radius:9px;
+          border:1px solid var(--border);background:rgba(0,8,22,0.9);
+          color:var(--cyan);font-family:'IBM Plex Mono',monospace;font-size:18px;
+          font-weight:500;transition:all .18s;outline:none;letter-spacing:.04em;
+          -moz-appearance:textfield}
+        .field-input::-webkit-outer-spin-button,.field-input::-webkit-inner-spin-button{-webkit-appearance:none}
+        .field-input:focus{border-color:rgba(0,229,255,0.48);
+          box-shadow:0 0 0 3px rgba(0,229,255,0.07),0 0 18px rgba(0,229,255,0.1)}
+        .field-input.gn{color:var(--green)}
+        .field-input.or{color:var(--orange)}
+        .field-input.pk{color:var(--pink)}
+        .field-select{width:100%;padding:10px 13px;border-radius:9px;
+          border:1px solid var(--border);background:rgba(0,8,22,0.9);
+          color:var(--text);font-family:'IBM Plex Mono',monospace;font-size:12px;
+          cursor:pointer;outline:none;transition:all .18s}
+        .field-select:focus{border-color:rgba(0,229,255,0.4)}
+        .fields-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+        .btn-row{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 14px}
+        .err{font-size:10px;color:#ff6b6b;padding:7px 11px;border-radius:7px;
+          background:rgba(255,50,50,0.07);border:1px solid rgba(255,50,50,0.2);margin-bottom:10px}
+
+        .mode-label{font-family:'Orbitron',monospace;font-size:11px;color:var(--cyan);
+          letter-spacing:.07em;margin-bottom:6px;margin-top:4px}
+        .mode-row{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px}
+        .mbtn{font-family:'IBM Plex Mono',monospace;font-size:10px;padding:6px 9px;
+          border-radius:7px;cursor:pointer;border:1px solid var(--border);
+          background:var(--surface2);color:var(--muted);transition:all .18s;
+          text-transform:uppercase;letter-spacing:.05em}
+        .mbtn:hover{border-color:var(--bh);color:var(--text)}
+        .mbtn.ax{border-color:rgba(0,229,255,0.45);color:var(--cyan);background:rgba(0,229,255,0.07)}
+        .mbtn.av{border-color:rgba(0,255,140,0.45);color:var(--green);background:rgba(0,255,140,0.06)}
+        .mbtn.aa{border-color:rgba(255,107,53,0.45);color:var(--orange);background:rgba(255,107,53,0.06)}
+        .mbtn.ae{border-color:rgba(255,80,200,0.45);color:var(--pink);background:rgba(255,80,200,0.06)}
+        .mbtn.aall{border-color:rgba(200,222,255,0.25);color:var(--text);background:rgba(200,222,255,0.04)}
+
+        .stats{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+        .sc{border-radius:10px;padding:11px;border:1px solid var(--border);background:rgba(0,6,18,0.7)}
+        .sl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
+        .sv{font-size:16px;font-weight:500;margin-top:5px}
+
+        .workspace{display:flex;flex-direction:column;gap:14px}
+        .cc{border-radius:16px;padding:14px;
+          background:var(--surface);border:1px solid var(--border);
+          box-shadow:var(--glow),var(--shadow);backdrop-filter:blur(24px)}
+        .chead{display:flex;justify-content:space-between;align-items:flex-start;
+          margin-bottom:9px;gap:10px;flex-wrap:wrap}
+        .chead h3{font-family:'Orbitron',monospace;font-size:12px;font-weight:600;letter-spacing:.07em}
+        .chead h3.cx{color:var(--cyan)}.chead h3.gn{color:var(--green)}.chead h3.or{color:var(--orange)}.chead h3.wh{color:var(--text)}.chead h3.pk{color:var(--pink)}
+        .csub{font-size:10px;color:var(--muted);margin-top:2px}
+        .live{font-size:10px;color:rgba(0,229,255,0.65);font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;white-space:nowrap}
+        canvas{display:block;width:100%;border-radius:10px}
+
+        .theory{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+        .tc{border-radius:16px;padding:20px;
+          background:var(--surface);border:1px solid var(--border);
+          box-shadow:var(--glow),var(--shadow);backdrop-filter:blur(24px)}
+        .stitle{font-family:'Orbitron',monospace;font-size:12px;color:var(--cyan);
+          letter-spacing:.09em;margin-bottom:12px}
+        ul{padding-left:16px}
+        ul li{color:var(--muted);font-size:11px;line-height:2.1}
+        .task{padding:10px 13px;border-radius:9px;margin-top:7px;
+          background:rgba(0,229,255,0.03);border:1px solid rgba(0,229,255,0.07);
+          font-size:11px;color:rgba(200,220,255,0.6);line-height:1.7}
+        .footer{text-align:center;font-size:10px;color:var(--muted);padding-top:8px;letter-spacing:.06em}
+
+        @media(max-width:960px){.hero,.main-grid,.theory{grid-template-columns:1fr}.hero h2{font-size:18px}}
+      `}),(0,a.jsx)("div",{className:"bg-grid"}),(0,a.jsx)("div",{className:"bg-glow"}),(0,a.jsx)("div",{className:"scan"}),(0,a.jsxs)("div",{className:"page",children:[(0,a.jsxs)("div",{className:"author-banner",children:[(0,a.jsx)("span",{className:"author-label",children:ea.authorLabel}),(0,a.jsx)("div",{className:"author-divider"}),(0,a.jsx)("span",{className:"author-name",children:"Qaldybek UstazLabX"})]}),(0,a.jsxs)("div",{className:"topbar",children:[(0,a.jsxs)("div",{className:"brand",children:[(0,a.jsx)("div",{className:"logo",children:"φ"}),(0,a.jsxs)("div",{children:[(0,a.jsx)("h1",{children:ea.brandTitle}),(0,a.jsx)("small",{children:ea.brandSubtitle})]})]}),(0,a.jsxs)("div",{className:"top-actions",children:[(0,a.jsx)("button",{className:`btn lang-btn${"kk"===e?" active":""}`,onClick:()=>n("kk"),children:"ҚАЗ"}),(0,a.jsx)("button",{className:`btn lang-btn${"ru"===e?" active":""}`,onClick:()=>n("ru"),children:"РУС"})]})]}),(0,a.jsxs)("section",{className:"hero",children:[(0,a.jsxs)("div",{children:[(0,a.jsx)("h2",{children:ea.heroTitle}),(0,a.jsx)("p",{children:ea.heroText}),(0,a.jsxs)("div",{className:"pills",children:[(0,a.jsx)("span",{className:"pill",children:ea.pill1}),(0,a.jsx)("span",{className:"pill",children:ea.pill2}),(0,a.jsx)("span",{className:"pill",children:ea.pill3})]})]}),(0,a.jsxs)("div",{className:"formula-box",children:[(0,a.jsx)("div",{className:"fl",children:ea.formulaLabel}),(0,a.jsxs)("div",{className:"fr",children:[(0,a.jsx)("span",{className:"fk",children:ea.eqX}),(0,a.jsx)("span",{className:"fv cx",children:er})]}),(0,a.jsxs)("div",{className:"fr",children:[(0,a.jsx)("span",{className:"fk",children:ea.eqV}),(0,a.jsx)("span",{className:"fv gn",children:el})]}),(0,a.jsxs)("div",{className:"fr",children:[(0,a.jsx)("span",{className:"fk",children:ea.eqA}),(0,a.jsx)("span",{className:"fv or",children:et})]})]})]}),(0,a.jsxs)("div",{className:"main-grid",children:[(0,a.jsxs)("aside",{className:"panel",children:[(0,a.jsx)("div",{className:"panel-title",children:ea.controlTitle}),(0,a.jsx)("div",{className:"panel-sub",children:ea.controlSub}),(0,a.jsxs)("div",{className:"field",children:[(0,a.jsx)("label",{className:"field-label",children:ea.funcLabel}),(0,a.jsxs)("select",{className:"field-select",value:N,onChange:e=>w(e.target.value),children:[(0,a.jsx)("option",{value:"sin",children:"sin — A·sin(ωt + φ)"}),(0,a.jsx)("option",{value:"cos",children:"cos — A·cos(ωt + φ)"})]})]}),(0,a.jsxs)("div",{className:"field",children:[(0,a.jsx)("label",{className:"field-label",children:ea.ampLabel}),(0,a.jsx)("input",{className:"field-input",type:"number",value:p,min:"0.01",max:"999",step:"0.1",placeholder:"2",onChange:e=>x(e.target.value)})]}),(0,a.jsxs)("div",{className:"field",children:[(0,a.jsx)("label",{className:"field-label",children:ea.periodLabel}),(0,a.jsx)("input",{className:"field-input gn",type:"number",value:b,min:"0.01",max:"999",step:"0.1",placeholder:"4",onChange:e=>m(e.target.value)})]}),(0,a.jsxs)("div",{className:"field",children:[(0,a.jsx)("label",{className:"field-label",children:ea.phaseLabel}),(0,a.jsx)("input",{className:"field-input or",type:"number",value:f,min:"-100",max:"100",step:"0.01",placeholder:"0",onChange:e=>h(e.target.value)})]}),(0,a.jsxs)("div",{className:"field",children:[(0,a.jsx)("label",{className:"field-label",children:ea.massLabel}),(0,a.jsx)("input",{className:"field-input pk",type:"number",value:k,min:"0.01",max:"999",step:"0.1",placeholder:"1",onChange:e=>y(e.target.value)})]}),(0,a.jsxs)("div",{className:"fields-row",children:[(0,a.jsxs)("div",{className:"field",children:[(0,a.jsx)("label",{className:"field-label",children:ea.timeLabel}),(0,a.jsx)("input",{className:"field-input",type:"number",value:g,min:"1",max:"999",step:"1",placeholder:"12",style:{fontSize:15},onChange:e=>u(e.target.value)})]}),(0,a.jsxs)("div",{className:"field",children:[(0,a.jsx)("label",{className:"field-label",children:ea.speedLabel}),(0,a.jsx)("input",{className:"field-input",type:"number",value:v,min:"0.1",max:"20",step:"0.1",placeholder:"1",style:{fontSize:15},onChange:e=>j(e.target.value)})]})]}),C&&(0,a.jsx)("div",{className:"err",children:C}),(0,a.jsxs)("div",{className:"btn-row",children:[(0,a.jsx)("button",{className:"btn btn-cyan",onClick:es,children:ea.applyBtn}),(0,a.jsx)("button",{className:"btn",onClick:()=>{c(e=>{let a=!e;return a&&(Q.current=null,requestAnimationFrame(eo)),a})},children:d?ea.playStop[0]:ea.playStop[1]}),(0,a.jsx)("button",{className:"btn",onClick:()=>{x("2"),m("4"),h("0"),u("12"),j("1"),y("1"),w("sin"),A(2),z(4),$(0),R(12),X(1),V(1),E(""),Q.current=null},children:ea.resetBtn})]}),(0,a.jsx)("div",{className:"mode-label",children:ea.displayMode}),(0,a.jsxs)("div",{className:"mode-row",children:[(0,a.jsx)("button",{className:`mbtn${"all"===T?" aall":""}`,onClick:()=>S("all"),children:ea.modeAll}),(0,a.jsx)("button",{className:`mbtn${"x"===T?" ax":""}`,onClick:()=>S("x"),children:ea.modeX}),(0,a.jsx)("button",{className:`mbtn${"v"===T?" av":""}`,onClick:()=>S("v"),children:ea.modeV}),(0,a.jsx)("button",{className:`mbtn${"a"===T?" aa":""}`,onClick:()=>S("a"),children:ea.modeA}),(0,a.jsx)("button",{className:`mbtn${"e"===T?" ae":""}`,onClick:()=>S("e"),children:ea.modeE})]}),(0,a.jsxs)("div",{className:"stats",children:[(0,a.jsxs)("div",{className:"sc",children:[(0,a.jsx)("div",{className:"sl",children:ea.stat1Label}),(0,a.jsxs)("div",{className:"sv",style:{color:"var(--cyan)"},children:[t(J)," Гц"]})]}),(0,a.jsxs)("div",{className:"sc",children:[(0,a.jsx)("div",{className:"sl",children:ea.stat2Label}),(0,a.jsxs)("div",{className:"sv",style:{color:"var(--cyan)"},children:[t(Y)," рад/с"]})]}),(0,a.jsxs)("div",{className:"sc",children:[(0,a.jsx)("div",{className:"sl",children:ea.stat3Label}),(0,a.jsxs)("div",{className:"sv",style:{color:"var(--green)"},children:[t(Z)," м/с"]})]}),(0,a.jsxs)("div",{className:"sc",children:[(0,a.jsx)("div",{className:"sl",children:ea.stat4Label}),(0,a.jsxs)("div",{className:"sv",style:{color:"var(--orange)"},children:[t(_)," м/с²"]})]}),(0,a.jsxs)("div",{className:"sc",style:{gridColumn:"1 / -1"},children:[(0,a.jsx)("div",{className:"sl",children:"E total"}),(0,a.jsxs)("div",{className:"sv",style:{color:"var(--pink)"},children:[t(ee)," Дж"]})]})]})]}),(0,a.jsxs)("div",{className:"workspace",children:[(0,a.jsxs)("div",{className:"cc",children:[(0,a.jsxs)("div",{className:"chead",children:[(0,a.jsxs)("div",{children:[(0,a.jsx)("h3",{className:"wh",children:ea.animTitle}),(0,a.jsx)("div",{className:"csub",children:ea.animSub})]}),(0,a.jsx)("div",{className:"live",children:F})]}),(0,a.jsx)("canvas",{ref:W,width:920,height:160})]}),("all"===T||"x"===T)&&(0,a.jsxs)("div",{className:"cc",children:[(0,a.jsx)("div",{className:"chead",children:(0,a.jsxs)("div",{children:[(0,a.jsx)("h3",{className:"cx",children:ea.graphX}),(0,a.jsxs)("div",{className:"csub",children:[ea.eqX," ",er]})]})}),(0,a.jsx)("canvas",{ref:G,width:920,height:210})]}),("all"===T||"v"===T)&&(0,a.jsxs)("div",{className:"cc",children:[(0,a.jsx)("div",{className:"chead",children:(0,a.jsxs)("div",{children:[(0,a.jsx)("h3",{className:"gn",children:ea.graphV}),(0,a.jsxs)("div",{className:"csub",children:[ea.eqV," ",el]})]})}),(0,a.jsx)("canvas",{ref:U,width:920,height:210})]}),("all"===T||"a"===T)&&(0,a.jsxs)("div",{className:"cc",children:[(0,a.jsx)("div",{className:"chead",children:(0,a.jsxs)("div",{children:[(0,a.jsx)("h3",{className:"or",children:ea.graphA}),(0,a.jsxs)("div",{className:"csub",children:[ea.eqA," ",et]})]})}),(0,a.jsx)("canvas",{ref:K,width:920,height:210})]}),("all"===T||"e"===T)&&(0,a.jsxs)("div",{className:"cc",children:[(0,a.jsxs)("div",{className:"chead",children:[(0,a.jsxs)("div",{children:[(0,a.jsx)("h3",{className:"pk",children:ea.graphE}),(0,a.jsx)("div",{className:"csub",children:ea.graphEsub})]}),(0,a.jsxs)("div",{className:"live",style:{color:"rgba(255,80,200,0.7)"},children:["E = ",t(ee)," Дж"]})]}),(0,a.jsx)("canvas",{ref:D,width:920,height:240})]})]})]}),(0,a.jsxs)("div",{className:"theory",children:[(0,a.jsxs)("div",{className:"tc",children:[(0,a.jsx)("div",{className:"stitle",children:ea.theoryTitle}),(0,a.jsx)("ul",{children:ea.theoryList.map((e,r)=>(0,a.jsx)("li",{children:e},r))})]}),(0,a.jsxs)("div",{className:"tc",children:[(0,a.jsx)("div",{className:"stitle",children:ea.tasksTitle}),ea.tasks.map((e,r)=>(0,a.jsx)("div",{className:"task",children:e},r))]})]}),(0,a.jsx)("div",{className:"footer",children:ea.footerText})]})]})}])}]);

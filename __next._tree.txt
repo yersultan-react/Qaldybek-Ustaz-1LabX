@@ -1,2 +1,2 @@
 :HL["/Qaldybek-Ustaz-1LabX/_next/static/chunks/0z37-h~pnl.t7.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"xP-CZG_b4cDZwiQvHpMvl"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"KnfKSDb_Nxe9nweaQaZPx"}
