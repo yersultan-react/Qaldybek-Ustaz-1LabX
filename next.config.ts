@@ -1,15 +1,13 @@
-import type { NextConfig } from "next";
-
 const isProd = process.env.NODE_ENV === "production";
 
-const nextConfig: NextConfig = {
-  output: "export",
-  basePath: isProd ? "/harmonic-lab" : "",
-  assetPrefix: isProd ? "/harmonic-lab/" : "",
+const nextConfig = {
+  output: 'export', // static export
+  basePath: isProd ? '/qaldybek-ustaz-1labx' : '',
+  assetPrefix: isProd ? '/qaldybek-ustaz-1labx/' : '',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
