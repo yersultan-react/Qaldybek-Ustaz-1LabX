@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="kk"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/Qaldybek-Ustaz-1LabX/_next/static/chunks/0z37-h~pnl.t7.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/Qaldybek-Ustaz-1LabX/_next/static/chunks/17x2k29n0n7ar.js"/><script src="/Qaldybek-Ustaz-1LabX/_next/static/chunks/0~agoldtc2d80.js" async=""></script><script src="/Qaldybek-Ustaz-1LabX/_next/static/chunks/0~4p-sa15jfuw.js" async=""></script><script src="/Qaldybek-Ustaz-1LabX/_next/static/chunks/turbopack-0xaxal3~w_~kn.js" async=""></script><script src="/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js" async=""></script><script src="/Qaldybek-Ustaz-1LabX/_next/static/chunks/02qy-7lmn57yk.js" async=""></script><title>Виртуалды зертхана — Гармоникалық тербелістер</title><meta name="description" content="Гармоникалық тербелістердің теңдеулері мен графиктері"/><link rel="icon" href="/Qaldybek-Ustaz-1LabX/favicon.ico?favicon.0x3dzn~oxb6tn.ico" sizes="256x256" type="image/x-icon"/><script src="/Qaldybek-Ustaz-1LabX/_next/static/chunks/03~yq9q893hmn.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+        :root {
+          --bg:#040b18; --surface:rgba(6,16,40,0.88); --surface2:rgba(3,10,28,0.92);
+          --text:#c8deff; --muted:#3d5a84;
+          --cyan:#00e5ff; --green:#00ff8c; --orange:#ff6b35;
+          --border:rgba(0,229,255,0.1); --bh:rgba(0,229,255,0.32);
+          --glow:0 0 30px rgba(0,229,255,0.1); --shadow:0 24px 70px rgba(0,0,0,0.7);
+        }
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html,body{height:100%}
+        body{font-family:'IBM Plex Mono','Courier New',monospace;background:var(--bg);color:var(--text);overflow-x:hidden}
+        .bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;
+          background-image:linear-gradient(rgba(0,229,255,0.025) 1px,transparent 1px),
+          linear-gradient(90deg,rgba(0,229,255,0.025) 1px,transparent 1px);
+          background-size:52px 52px}
+        .bg-glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+          background:radial-gradient(ellipse 70% 55% at 15% 8%,rgba(0,40,120,0.3) 0%,transparent 65%),
+          radial-gradient(ellipse 55% 70% at 88% 92%,rgba(0,80,60,0.15) 0%,transparent 65%)}
+        .scan{position:fixed;left:0;right:0;height:3px;z-index:0;pointer-events:none;
+          background:linear-gradient(90deg,transparent,rgba(0,229,255,0.07),transparent);
+          animation:sc 9s linear infinite}
+        @keyframes sc{from{top:-3px}to{top:100vh}}
+        .page{position:relative;z-index:1;width:min(1440px,96%);margin:0 auto;padding:18px 0 40px}
+
+        /* TOPBAR */
+        .topbar{display:flex;justify-content:space-between;align-items:center;
+          padding:13px 20px;border-radius:14px;margin-bottom:16px;
+          background:var(--surface);border:1px solid var(--border);
+          box-shadow:var(--glow),var(--shadow);position:sticky;top:10px;z-index:10;
+          backdrop-filter:blur(24px)}
+        .brand{display:flex;align-items:center;gap:13px}
+        .logo{width:44px;height:44px;border-radius:11px;
+          background:linear-gradient(135deg,var(--cyan),var(--green));
+          display:grid;place-items:center;font-family:'Orbitron',monospace;
+          font-weight:800;font-size:17px;color:#040b18;
+          box-shadow:0 0 22px rgba(0,229,255,0.45)}
+        .brand h1{font-family:'Orbitron',monospace;font-size:14px;font-weight:600;
+          color:var(--cyan);letter-spacing:.06em}
+        .brand small{font-size:10px;color:var(--muted);display:block;margin-top:2px}
+        .top-actions{display:flex;gap:8px}
+
+        /* BUTTONS */
+        .btn{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
+          padding:8px 14px;border-radius:9px;cursor:pointer;transition:all .18s;
+          border:1px solid var(--border);background:var(--surface2);color:var(--text);
+          letter-spacing:.06em;text-transform:uppercase}
+        .btn:hover{border-color:var(--bh);box-shadow:var(--glow);transform:translateY(-1px)}
+        .btn-cyan{background:linear-gradient(135deg,rgba(0,229,255,0.18),rgba(0,180,220,0.08));
+          border-color:rgba(0,229,255,0.38);color:var(--cyan);box-shadow:0 0 14px rgba(0,229,255,0.08)}
+        .btn-cyan:hover{box-shadow:0 0 28px rgba(0,229,255,0.28)}
+        .lang-btn.active{background:rgba(0,229,255,0.12);border-color:rgba(0,229,255,0.45);
+          color:var(--cyan);box-shadow:0 0 12px rgba(0,229,255,0.18)}
+
+        /* HERO */
+        .hero{display:grid;grid-template-columns:1.35fr .65fr;gap:16px;
+          padding:26px;border-radius:18px;margin-bottom:16px;
+          background:var(--surface);border:1px solid var(--border);
+          box-shadow:var(--glow),var(--shadow);backdrop-filter:blur(24px)}
+        .hero h2{font-family:'Orbitron',monospace;font-size:24px;font-weight:800;
+          line-height:1.2;margin-bottom:10px;
+          background:linear-gradient(135deg,var(--cyan),var(--green));
+          -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .hero p{color:var(--muted);font-size:12px;line-height:1.9;margin-bottom:12px}
+        .pills{display:flex;gap:7px;flex-wrap:wrap}
+        .pill{padding:5px 12px;border-radius:999px;font-size:10px;
+          border:1px solid var(--border);color:rgba(200,222,255,0.5);background:rgba(0,229,255,0.03)}
+        .formula-box{padding:18px;border-radius:14px;
+          background:linear-gradient(135deg,rgba(0,229,255,0.06),rgba(0,255,140,0.03));
+          border:1px solid rgba(0,229,255,0.18);display:flex;flex-direction:column;gap:10px}
+        .fl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-bottom:2px}
+        .fr{display:flex;align-items:baseline;gap:8px}
+        .fk{font-size:10px;color:var(--muted);min-width:50px}
+        .fv{font-size:14px;font-weight:500;letter-spacing:.02em}
+        .fv.cx{color:var(--cyan)}.fv.gn{color:var(--green)}.fv.or{color:var(--orange)}
+
+        /* LAYOUT */
+        .main-grid{display:grid;grid-template-columns:310px 1fr;gap:16px;margin-bottom:16px}
+
+        /* CONTROL PANEL */
+        .panel{background:var(--surface);border:1px solid var(--border);
+          border-radius:18px;padding:20px;box-shadow:var(--glow),var(--shadow);
+          backdrop-filter:blur(24px);display:flex;flex-direction:column}
+        .panel-title{font-family:'Orbitron',monospace;font-size:12px;font-weight:600;
+          color:var(--cyan);letter-spacing:.08em;margin-bottom:3px}
+        .panel-sub{font-size:10px;color:var(--muted);margin-bottom:16px}
+        .field{margin-bottom:12px}
+        .field-label{font-size:10px;color:var(--muted);text-transform:uppercase;
+          letter-spacing:.09em;margin-bottom:5px;display:block}
+        .field-input{width:100%;padding:10px 13px;border-radius:9px;
+          border:1px solid var(--border);background:rgba(0,8,22,0.9);
+          color:var(--cyan);font-family:'IBM Plex Mono',monospace;font-size:18px;
+          font-weight:500;transition:all .18s;outline:none;letter-spacing:.04em;
+          -moz-appearance:textfield}
+        .field-input::-webkit-outer-spin-button,.field-input::-webkit-inner-spin-button{-webkit-appearance:none}
+        .field-input:focus{border-color:rgba(0,229,255,0.48);
+          box-shadow:0 0 0 3px rgba(0,229,255,0.07),0 0 18px rgba(0,229,255,0.1)}
+        .field-input.gn{color:var(--green)}
+        .field-input.or{color:var(--orange)}
+        .field-select{width:100%;padding:10px 13px;border-radius:9px;
+          border:1px solid var(--border);background:rgba(0,8,22,0.9);
+          color:var(--text);font-family:'IBM Plex Mono',monospace;font-size:12px;
+          cursor:pointer;outline:none;transition:all .18s}
+        .field-select:focus{border-color:rgba(0,229,255,0.4)}
+        .fields-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+        .btn-row{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 14px}
+        .err{font-size:10px;color:#ff6b6b;padding:7px 11px;border-radius:7px;
+          background:rgba(255,50,50,0.07);border:1px solid rgba(255,50,50,0.2);margin-bottom:10px}
+
+        /* MODE */
+        .mode-label{font-family:'Orbitron',monospace;font-size:11px;color:var(--cyan);
+          letter-spacing:.07em;margin-bottom:6px;margin-top:4px}
+        .mode-row{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px}
+        .mbtn{font-family:'IBM Plex Mono',monospace;font-size:10px;padding:6px 9px;
+          border-radius:7px;cursor:pointer;border:1px solid var(--border);
+          background:var(--surface2);color:var(--muted);transition:all .18s;
+          text-transform:uppercase;letter-spacing:.05em}
+        .mbtn:hover{border-color:var(--bh);color:var(--text)}
+        .mbtn.ax{border-color:rgba(0,229,255,0.45);color:var(--cyan);background:rgba(0,229,255,0.07)}
+        .mbtn.av{border-color:rgba(0,255,140,0.45);color:var(--green);background:rgba(0,255,140,0.06)}
+        .mbtn.aa{border-color:rgba(255,107,53,0.45);color:var(--orange);background:rgba(255,107,53,0.06)}
+        .mbtn.aall{border-color:rgba(200,222,255,0.25);color:var(--text);background:rgba(200,222,255,0.04)}
+
+        /* STATS */
+        .stats{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+        .sc{border-radius:10px;padding:11px;border:1px solid var(--border);background:rgba(0,6,18,0.7)}
+        .sl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
+        .sv{font-size:16px;font-weight:500;margin-top:5px}
+
+        /* WORKSPACE */
+        .workspace{display:flex;flex-direction:column;gap:14px}
+        .cc{border-radius:16px;padding:14px;
+          background:var(--surface);border:1px solid var(--border);
+          box-shadow:var(--glow),var(--shadow);backdrop-filter:blur(24px)}
+        .chead{display:flex;justify-content:space-between;align-items:flex-start;
+          margin-bottom:9px;gap:10px;flex-wrap:wrap}
+        .chead h3{font-family:'Orbitron',monospace;font-size:12px;font-weight:600;letter-spacing:.07em}
+        .chead h3.cx{color:var(--cyan)}.chead h3.gn{color:var(--green)}.chead h3.or{color:var(--orange)}.chead h3.wh{color:var(--text)}
+        .csub{font-size:10px;color:var(--muted);margin-top:2px}
+        .live{font-size:10px;color:rgba(0,229,255,0.65);font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;white-space:nowrap}
+        canvas{display:block;width:100%;border-radius:10px}
+
+        /* THEORY */
+        .theory{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+        .tc{border-radius:16px;padding:20px;
+          background:var(--surface);border:1px solid var(--border);
+          box-shadow:var(--glow),var(--shadow);backdrop-filter:blur(24px)}
+        .stitle{font-family:'Orbitron',monospace;font-size:12px;color:var(--cyan);
+          letter-spacing:.09em;margin-bottom:12px}
+        ul{padding-left:16px}
+        ul li{color:var(--muted);font-size:11px;line-height:2.1}
+        .task{padding:10px 13px;border-radius:9px;margin-top:7px;
+          background:rgba(0,229,255,0.03);border:1px solid rgba(0,229,255,0.07);
+          font-size:11px;color:rgba(200,220,255,0.6);line-height:1.7}
+        .footer{text-align:center;font-size:10px;color:var(--muted);padding-top:8px;letter-spacing:.06em}
+
+        @media(max-width:960px){.hero,.main-grid,.theory{grid-template-columns:1fr}.hero h2{font-size:18px}}
+      </style><div class="bg-grid"></div><div class="bg-glow"></div><div class="scan"></div><div class="page"><div class="topbar"><div class="brand"><div class="logo">φ</div><div><h1>Виртуалды зертхана</h1><small>Гармоникалық тербелістердің теңдеулері мен графиктері</small></div></div><div class="top-actions"><button class="btn lang-btn active">ҚАЗ</button><button class="btn lang-btn">РУС</button></div></div><section class="hero"><div><h2>Гармоникалық тербелістерді интерактивті түрде зерттеу</h2><p>Амплитуда, период және бастапқы фазаны енгізіп, координата, жылдамдық және үдеу графиктерін бірден бақылаңыз.</p><div class="pills"><span class="pill">Интерактивті басқару</span><span class="pill">x / v / a графиктері</span><span class="pill">Қазақша / Орысша</span></div></div><div class="formula-box"><div class="fl">Ағымдағы тербеліс теңдеуі</div><div class="fr"><span class="fk">x(t) =</span><span class="fv cx">2.00·sin(1.57t + 0.00)</span></div><div class="fr"><span class="fk">v(t) =</span><span class="fv gn">3.14·cos(1.57t + 0.00)</span></div><div class="fr"><span class="fk">a(t) =</span><span class="fv or">-4.93·sin(1.57t + 0.00)</span></div></div></section><div class="main-grid"><aside class="panel"><div class="panel-title">Параметрлерді енгізу</div><div class="panel-sub">Мәндерді қолмен теріңіз</div><div class="field"><label class="field-label">Функция</label><select class="field-select"><option value="sin" selected="">sin — A·sin(ωt + φ)</option><option value="cos">cos — A·cos(ωt + φ)</option></select></div><div class="field"><label class="field-label">Амплитуда A (м)</label><input class="field-input" type="number" min="0.01" max="999" step="0.1" placeholder="2" value="2"/></div><div class="field"><label class="field-label">Период T (с)</label><input class="field-input gn" type="number" min="0.01" max="999" step="0.1" placeholder="4" value="4"/></div><div class="field"><label class="field-label">Бастапқы фаза φ (рад)</label><input class="field-input or" type="number" min="-100" max="100" step="0.01" placeholder="0" value="0"/></div><div class="fields-row"><div class="field"><label class="field-label">Уақыт аралығы (с)</label><input class="field-input" type="number" min="1" max="999" step="1" placeholder="12" style="font-size:15px" value="12"/></div><div class="field"><label class="field-label">Анимация жылд.</label><input class="field-input" type="number" min="0.1" max="20" step="0.1" placeholder="1" style="font-size:15px" value="1"/></div></div><div class="btn-row"><button class="btn btn-cyan">Қолдану</button><button class="btn">Тоқтату</button><button class="btn">Қалпына келтіру</button></div><div class="mode-label">Көрсету режимі</div><div class="mode-row"><button class="mbtn aall">Барлығы</button><button class="mbtn">x(t)</button><button class="mbtn">v(t)</button><button class="mbtn">a(t)</button></div><div class="stats"><div class="sc"><div class="sl">Жиілік</div><div class="sv" style="color:var(--cyan)">0.25<!-- --> Гц</div></div><div class="sc"><div class="sl">Бұрыштық жиілік</div><div class="sv" style="color:var(--cyan)">1.57<!-- --> рад/с</div></div><div class="sc"><div class="sl">Макс. жылдамдық</div><div class="sv" style="color:var(--green)">3.14<!-- --> м/с</div></div><div class="sc"><div class="sl">Макс. үдеу</div><div class="sv" style="color:var(--orange)">4.93<!-- --> м/с²</div></div></div></aside><div class="workspace"><div class="cc"><div class="chead"><div><h3 class="wh">Қозғалыс анимациясы</h3><div class="csub">Нүктенің тербелісін нақты уақытта бақылау</div></div><div class="live"></div></div><canvas width="920" height="160"></canvas></div><div class="cc"><div class="chead"><div><h3 class="cx">x(t) — Координата</h3><div class="csub">x(t) =<!-- --> <!-- -->2.00·sin(1.57t + 0.00)</div></div></div><canvas width="920" height="210"></canvas></div><div class="cc"><div class="chead"><div><h3 class="gn">v(t) — Жылдамдық</h3><div class="csub">v(t) =<!-- --> <!-- -->3.14·cos(1.57t + 0.00)</div></div></div><canvas width="920" height="210"></canvas></div><div class="cc"><div class="chead"><div><h3 class="or">a(t) — Үдеу</h3><div class="csub">a(t) =<!-- --> <!-- -->-4.93·sin(1.57t + 0.00)</div></div></div><canvas width="920" height="210"></canvas></div></div></div><div class="theory"><div class="tc"><div class="stitle">Қысқаша теория</div><ul><li>Координата: x(t) = A·sin(ωt + φ)</li><li>Жылдамдық: v(t) = Aω·cos(ωt + φ)</li><li>Үдеу: a(t) = −Aω²·sin(ωt + φ)</li><li>Жиілік: f = 1/T,  бұрыштық жиілік: ω = 2π/T</li><li>Максимал жылдамдық: vmax = Aω,  үдеу: amax = Aω²</li></ul></div><div class="tc"><div class="stitle">Зертханалық тапсырмалар</div><div class="task">1) A=3 м, T=2 с енгізіп, vmax мен amax мәндерін тап.</div><div class="task">2) Периодты азайтқанда бұрыштық жиілік қалай өзгереді?</div><div class="task">3) φ=1.57 енгізіп, cos пен sin графиктерінің айырмашылығын түсіндір.</div></div></div><div class="footer">Виртуалды зертхана — физика сабағына арналған интерактивті құрал.</div></div><!--$--><!--/$--><script src="/Qaldybek-Ustaz-1LabX/_next/static/chunks/17x2k29n0n7ar.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[51915,[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\"],\"default\"]\n3:I[77204,[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\"],\"default\"]\n4:I[76063,[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\"],\"ClientPageRoot\"]\n5:I[16244,[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\",\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/02qy-7lmn57yk.js\"],\"default\"]\n8:I[9388,[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\"],\"OutletBoundary\"]\n9:\"$Sreact.suspense\"\nb:I[9388,[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\"],\"ViewportBoundary\"]\nd:I[9388,[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\"],\"MetadataBoundary\"]\nf:I[12414,[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\"],\"default\",1]\n:HL[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/0z37-h~pnl.t7.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"c\":[\"\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/0z37-h~pnl.t7.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"kk\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L4\",null,{\"Component\":\"$5\",\"serverProvidedParams\":{\"searchParams\":{},\"params\":{},\"promises\":[\"$@6\",\"$@7\"]}}],[[\"$\",\"script\",\"script-0\",{\"src\":\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/02qy-7lmn57yk.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L8\",null,{\"children\":[\"$\",\"$9\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@a\"}]}]]}],{},null,false,null]},null,false,null],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$Lb\",null,{\"children\":\"$Lc\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$Ld\",null,{\"children\":[\"$\",\"$9\",null,{\"name\":\"Next.Metadata\",\"children\":\"$Le\"}]}]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$f\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/0z37-h~pnl.t7.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"xP-CZG_b4cDZwiQvHpMvl\"}\n"])</script><script>self.__next_f.push([1,"6:{}\n7:\"$0:f:0:1:1:children:0:props:children:0:props:serverProvidedParams:params\"\n"])</script><script>self.__next_f.push([1,"c:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"10:I[57871,[\"/Qaldybek-Ustaz-1LabX/_next/static/chunks/01czhtk4bdsuw.js\"],\"IconMark\"]\na:null\ne:[[\"$\",\"title\",\"0\",{\"children\":\"Виртуалды зертхана — Гармоникалық тербелістер\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Гармоникалық тербелістердің теңдеулері мен графиктері\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/Qaldybek-Ustaz-1LabX/favicon.ico?favicon.0x3dzn~oxb6tn.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"$L10\",\"3\",{}]]\n"])</script></body></html>
